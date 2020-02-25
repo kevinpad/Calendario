@@ -58,9 +58,5 @@ body {
   &__last-dia{
     opacity: .3;
   }
-  &__semana{
-      display: grid;
-      grid-template-columns: repeat(7, lfr);
-      grid-gap: 10%;
-  }
+
 }
