@@ -4,31 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calendario Bictia</title>
-        <link rel="stylesheet" href="Styles.css">
+        <link rel="stylesheet" href="calendario.css">
+        
     </head>
 <body>
-
-<h1 id="titulo">Calendario Bictia</h1>
-
-<div class="Calendario">
+      <h1 class="titulo">calendario Bictia</h1>
+    <div class="calendario">
     <div class="calendario__info">
-        <div class="calendario__prev" id="prev-mes"></div>
-        <div class="calendario__mes" id="mes"></div>
-        <div class="calendaior__año" id="año"></div>
-        <div class="calendario__next" id="next-mes"></div>
-    </div>
+    <div class="calendario__mes"id="mes">enero</div>
+    <div class="calendario__año"id="año">2020</div>
+    <div class="calendario__siguiente"id="selec-mes">
+        <select id="doce" name="meses">
+        <option value="enero">Enero</option>
+        <option value="febrero">Febrero</option>
+        <option value="marzo">Marzo</option>
+        <option value="abril">Abril</option>
+        <option value="mayo">Mayo</option>
+        <option value="junio">Junio</option>
+        <option value="julio">Julio</option>
+        <option value="agosto">Agosto</option>
+        <option value="septiembre">Septiembre</option>
+        <option value="octubre">Octubre</option>
+        <option value="noviembre">Noviembre</option>
+        <option value="diciembre">Diciembre</option>
+      </select></div>
 
-    <div class="calendar__week">
-        <div class="calendario__day calendar__item">Lun</div>
-        <div class="calendario__day calendar__item">Mar</div>
-        <div class="calendario__day calendar__item">Mie</div>
-        <div class="calendario__day calendar__item">Jue</div>
-        <div class="calendario__day calendar__item">Vie</div>
-        <div class="calendario__day calendar__item">Sab</div>
-        <div class="calendario__day calendar__item">Dom</div>
-    </div>
-
-    <div class="calendario__datos" id="datos"></div>
 </div>
 
 <script src="script.js"></script>

@@ -1,0 +1,53 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  body {
+    background: -webkit-gradient(linear, left top, right top, from(rgb(160, 0, 106)), to(rgb(236, 68, 2)));
+    background: -webkit-linear-gradient(left,rgb(160, 0, 106)),(rgb(236, 68, 2) );
+    background: -o-linear-gradient(left,rgb(160, 0, 106)),(rgb(236, 68, 2) );
+    background: linear-gradient(to right,rgb(160, 0, 106)),(rgb(236, 68, 2) ); }
+  
+  .title {
+    text-align: center;
+    color: #444; }
+ 
+  .calendario {
+    background: #4ECDC4;
+    width: 80%;
+    max-width: 600px;
+    margin: 1em auto;
+    padding: .5em 0; }
+    .calendario__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0 2em;
+      font-size: 1.2em;
+      text-transform: uppercase; 
+    }      
+    .calendario__semana, .calendario__fechas {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: 10px; 
+    }
+    .calendario__mes {  
+        width: 100%;
+        padding: .5em 1em;
+        text-align: center;
+        float: right;
+     }
+    .calendario__articulo {
+      text-align: center;
+      line-height: 2; }
+    .calendario__dia {
+      background: lightcoral;
+      color: white;
+      width: 50%;
+      border-radius: 50%;
+      margin: auto; }
+    .calendario__last-dia {
+      opacity: .3; }
