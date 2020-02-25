@@ -29,11 +29,7 @@
 // Asunción de la Virgen ------------------- 15 de agosto
 // Día de la raza -------------------------- 12 de octubre
 // Todos los santos ------------------------- 1 de noviembre
-<<<<<<< HEAD
-// Independencia de Cartagena -------------- 11 de noviembre
-=======
-// Independencia de Cartagena -------------- 11 de noviembre
-<<<<<<< HEAD
+// Independencia de Cartagena -------------- 11 de noviembr
 
 
 var year = "2020" // año a mostrar el calendario // caso de uso: 2020 o mayor
@@ -57,7 +53,7 @@ var getEaster = function(year, equinoccio){
     return tmpFullMoon
 }     
 var fullMoonEaster = getEaster(year, equinoccio);
-console.log(fullMoonEaster)
+console.log(fullMoonEaster, "luna llena despues de equinoccio")//luna llena despues de equinoccio
 
 
 
@@ -68,34 +64,40 @@ function setToSunday(fullMoonEaster){
     return fullMoonEaster;
 }
 var sundayEaster = setToSunday(fullMoonEaster);
-console.log(sundayEaster,"rtyu")//domingo de pascua
+console.log(sundayEaster,"domingo de pascua")//domingo de pascua
 
 
 
 var holyThursday = new Date(sundayEaster)
 holyThursday.setDate(holyThursday.getDate()-(3));
-console.log(new Date(holyThursday)) //jueves santo
+console.log(new Date(holyThursday), "jueves santo") //jueves santo
 
 var goodFriday = new Date(sundayEaster);
 goodFriday.setDate(goodFriday.getDate()-(2));
-console.log(new Date(goodFriday))//viernes santo
-
+console.log(new Date(goodFriday), "viernes santo")//viernes santo
 
 var memorialDay = new Date(sundayEaster);
 memorialDay.setDate(memorialDay.getDate()+(43));
-console.log(new Date (memorialDay))//Ascension de jesus
+console.log(new Date (memorialDay), "Ascension de jesus")//Ascension de jesus
 
 var corpusChristi = new Date(sundayEaster);
 corpusChristi.setDate(corpusChristi.getDate()+(64));
-console.log(new Date (corpusChristi))//corpus Chisti
+console.log(new Date (corpusChristi), "corpus Chisti")//corpus Chisti
 
 var SacredHeartofJesus = new Date(sundayEaster);
 SacredHeartofJesus.setDate (SacredHeartofJesus.getDate()+(71));
-console.log(new Date(SacredHeartofJesus))//sagrado corazon de Jesus
+console.log(new Date(SacredHeartofJesus), "sagrado corazon de Jesus")//sagrado corazon de Jesus
+
 
 
 
 
 // Viernes santo = GoodFriday
 //var daysWeek = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+<<<<<<< HEAD
 ======
+=======
+
+
+
+>>>>>>> 56ec854e19217fe80ccc08455a4b0058ce1eda80
