@@ -13,7 +13,7 @@
     <h1 class="titulo">calendario Bictia</h1>
     <div class="calendario">
         <div class="calendario__info">
-            <div class="calendario__mes" id="mes"> <select id="doce" name="meses">
+            <div class="calendario__mes" id="mes"> <select class="doce" name="meses">
                     <option value="enero">Enero</option>
                     <option value="febrero">Febrero</option>
                     <option value="marzo">Marzo</option>
@@ -27,7 +27,7 @@
                     <option value="noviembre">Noviembre</option>
                     <option value="diciembre">Diciembre</option>
                 </select></div>
-            <div class="calendario__año" id="año"><select name="year" id="años">
+            <div class="calendario__año" id="año"><select name="year" class="doce">
                     <option value="2016">2016</option>
                     <option value="2017">2017</option>
                     <option value="2018">2018</option>
@@ -48,7 +48,7 @@
             <div class="calendario__dia calendar__articulo">Dom</div>
         </div>
         <div class="calendario__numeros">
-            <table class="mese">   
+            <table class="mese">
                 <tr class="numerosa">
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -56,7 +56,7 @@
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
-                    <td>5</td>
+                    <td class="dom">5</td>
                 </tr>
                 <tr>
                     <td>6</td>
@@ -65,7 +65,7 @@
                     <td>9</td>
                     <td>10</td>
                     <td>11</td>
-                    <td>12</td>
+                    <td class="dom">12</td>
                 </tr>
                 <tr>
                     <td>13</td>
@@ -74,7 +74,7 @@
                     <td>16</td>
                     <td>17</td>
                     <td>18</td>
-                    <td>19</td>
+                    <td class="dom">19</td>
                 </tr>
                 <tr>
                     <td>20</td>
@@ -83,7 +83,7 @@
                     <td>23</td>
                     <td>24</td>
                     <td>25</td>
-                    <td>26</td>
+                    <td class="dom">26</td>
                 </tr>
                 <tr>
                     <td>27</td>
@@ -92,11 +92,12 @@
                     <td>30</td>
                     <td>31</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="dom">&nbsp;</td>
                 </tr>
             </table>
         </div>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
