@@ -94,10 +94,3 @@ console.log(new Date(SacredHeartofJesus), "sagrado corazon de Jesus")//sagrado c
 
 // Viernes santo = GoodFriday
 //var daysWeek = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
-<<<<<<< HEAD
-======
-=======
-
-
-
->>>>>>> 56ec854e19217fe80ccc08455a4b0058ce1eda80
