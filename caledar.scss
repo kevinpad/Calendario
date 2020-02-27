@@ -31,7 +31,7 @@ body {
     text-transform: uppercase;
   }
 
-  &__semana, &__fechas{
+  &__semana, &__fechas {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 10px;

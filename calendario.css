@@ -8,7 +8,7 @@
     background: -o-linear-gradient(left,rgb(160, 0, 106)),(rgb(236, 68, 2) );
     background: linear-gradient(to right,rgb(160, 0, 106)),(rgb(236, 68, 2) ); }
   
-  .title {
+  .titulo {
     text-align: center;
     color: #444; }
  
@@ -29,7 +29,7 @@
       font-size: 1.2em;
       text-transform: uppercase; 
     }      
-    .calendario__semana, .calendario__fechas {
+    .calendario__semana, .calendario__fechas{
       display: grid;
       grid-template-columns: repeat(7, 1fr);
       grid-gap: 10px; 
@@ -44,10 +44,19 @@
       text-align: center;
       line-height: 2; }
     .calendario__dia {
-      background: lightcoral;
-      color: white;
+      background: rgb(247, 4, 4);
+      color: rgba(0, 0, 0, 0.883);
       width: 50%;
       border-radius: 50%;
       margin: auto; }
     .calendario__last-dia {
       opacity: .3; }
+    td {
+        display: table-cell;
+        vertical-align: inherit;
+    }
+    table.mese td {
+        padding: 2px 34px 5px 34px !important;
+        
+        }
+ 
