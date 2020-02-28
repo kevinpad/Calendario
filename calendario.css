@@ -3,10 +3,8 @@
     box-sizing: border-box; }
   
   body {
-    background: -webkit-gradient(linear, left top, right top, from(rgb(160, 0, 106)), to(rgb(236, 68, 2)));
-    background: -webkit-linear-gradient(left,rgb(160, 0, 106)),(rgb(236, 68, 2) );
-    background: -o-linear-gradient(left,rgb(160, 0, 106)),(rgb(236, 68, 2) );
-    background: linear-gradient(to right,rgb(160, 0, 106)),(rgb(236, 68, 2) );
+    
+    background-image: image(elsonas);
 }
   .titulo {
     text-align: center;
@@ -73,12 +71,14 @@
     }
     table.mese td {
         padding: 2px 34px 5px 34px;
+        background: #ffffff05;
         }
     .dom{
         color: rgb(255, 37, 37);
     }
     .calendario__numeros{
         font-family: fantasy ;
+        overflow: hidden;
     }
     .doce {
         --radius: 0;
