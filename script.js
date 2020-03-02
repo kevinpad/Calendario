@@ -32,10 +32,22 @@
 // Independencia de Cartagena -------------- 11 de noviembre
 
 
-var year = "2020" // año a mostrar el calendario // caso de uso: 2020 o mayor
+var year = "2021" // año a mostrar el calendario // caso de uso: 2020 o mayor
+var month = 0
 var equinoccio = new Date("03/19/2020");
 var fullmoon = new Date("01/10/2020"); // acumalado .5
 var accum = true
+
+
+var es_bisiesto = function(year){
+    return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+}
+
+if(es_bisiesto(year) == true){
+    february = "29";
+}else {
+    february = "28";
+}
 
 
 var getEaster = function(year, equinoccio){
@@ -47,7 +59,6 @@ var getEaster = function(year, equinoccio){
     return tmpFullMoon
 }     
 var fullMoonEaster = getEaster(year, equinoccio);
-console.log(fullMoonEaster, "LUNA LLENA DESPUES DE EQUINOCCIO")//luna llena despues de equinoccio
 
 
 function setToSunday(fullMoonEaster){
@@ -58,14 +69,6 @@ function setToSunday(fullMoonEaster){
     return fullMoonEaster;
 }
 var sundayEaster = setToSunday(fullMoonEaster);
-console.log(sundayEaster,"DOMINGO DE PASCUA")//domingo de pascua
-
-// function getNextSunday(date2){
-//     while(date2.getDay()!=7){
-//         date2.setDate(date2.getDate()+1);
-//     }
-//     return date2;
-// }
 
 function getNextMonday(date){
     while(date.getDay()!=1){
@@ -74,61 +77,76 @@ function getNextMonday(date){
     return date;
 }
 
-
 var threeKings = new Date("01/06/2020");
 getNextMonday(threeKings);
-console.log(getNextMonday(threeKings), "Reyes magos")//Reyes magos
 
 var saintJoseph = new Date("03/19/2020");
 getNextMonday(saintJoseph);
-console.log(getNextMonday(saintJoseph), "Dia de San Jose")//Dia de San Jose
 
 var saintPeterAndsaintPaul = new Date("06/29/2020");
 getNextMonday(saintPeterAndsaintPaul);
-console.log(getNextMonday(saintPeterAndsaintPaul), "Dia de san pedro y San Pablo")//Dia de san pedro y San Pablo
 
 var virginAscent = new Date("08/15/2020");
 getNextMonday(virginAscent);
-console.log(getNextMonday(virginAscent), "Ascencion de la Virgen")//Ascencion de la Virgen
 
 var breedDay = new Date("10/12/2020");
 getNextMonday(breedDay);
-console.log(getNextMonday(breedDay), "Dia de la Raza")//Dia de la raza
 
 var allSaints = new Date("11/01/2020");
 getNextMonday(allSaints);
-console.log(getNextMonday(allSaints), "Dia de todos los santos");//Dia de todos los santos
 
 var independenceCartagena = new Date("11/11/2020");
 getNextMonday(independenceCartagena);
-console.log(getNextMonday(independenceCartagena), "Dia de la independencia de Cartagena")//Dia de la independencia de Cartagena
 
 
 
 var holyThursday = new Date(sundayEaster)
 holyThursday.setDate(holyThursday.getDate()-(3));
-console.log(new Date(holyThursday), "***jueves santo") //jueves santo
 
 var goodFriday = new Date(sundayEaster);
 goodFriday.setDate(goodFriday.getDate()-(2));
-console.log(new Date(goodFriday), "***viernes santo")//viernes santo
 
 var memorialDay = new Date(sundayEaster);
 memorialDay.setDate(memorialDay.getDate()+(43));
-console.log(new Date (memorialDay), "***Ascension de jesus")//Ascension de jesus
 
 var corpusChristi = new Date(sundayEaster);
 corpusChristi.setDate(corpusChristi.getDate()+(64));
-console.log(new Date (corpusChristi), "***corpus Chisti")//corpus Chisti
 
 var SacredHeartofJesus = new Date(sundayEaster);
 SacredHeartofJesus.setDate (SacredHeartofJesus.getDate()+(71));
-console.log(new Date(SacredHeartofJesus), "***sagrado corazon de Jesus")//sagrado corazon de Jesus
+
+var daysMonths = [31, february, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+var months = ["Enero", "Febrero", "Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+
+var initial = new Date(month + "/01/" + year)
+for(let j = 1; j <= daysMonths[month]; j++){
+    console.log("dia: " + j);
+    initial.getDay();
+    
+    
+}
+var newTr = document.createElement("tr");
+var newTd = document.createElement("td");
 
 
-// function getNextSunday(date2){
-//     while(date2.getDay()!=7){
-//         date2.setDate(date2.getDate()+1);
-//     }
-//     return date2;
-// }
+
+
+
+
+var menu = document.getElementById("calendario-numeros").getElementsByTagName("table")[0];
+
+menu.appendChild(newTr);
+newTr.appendChild(newTd);
+newTd.innerHTML = "6";
+
+
+for(newTd.innerHTML = 6; newTd.innerHTML<31; newTd.innerHTML++){
+    // document.createElement("td");
+    // document.getElementById("calendario-numeros").getElementsByTagName("table")[0];
+    // newTr.appendChild(newTd);
+    // newTd.innerHTML = "6";
+ }
+
+
+//var tdMaster = newTd.innerHTML
+
