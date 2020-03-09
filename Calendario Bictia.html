@@ -10,112 +10,61 @@
 </head>
 
 <body>
-    <h1 class="titulo">calendario Bictia</h1>
-    <div class="calendario">
-        <div class="calendario__info">
-<<<<<<< HEAD
-            <div class="calendario__mes" id="mes"> <select id="doce" name="meses">
-                    <option value="0">Enero</option>
-                    <option value="1">Febrero</option>
-=======
-            <div class="calendario__mes" id="mes"> <select class="doce" name="meses">
-                    <option value="enero">Enero</option>
-                    <option value="febrero">Febrero</option>
->>>>>>> fd52b9e48616f3030bd434bca84d71759bfdec08
-                    <option value="marzo">Marzo</option>
-                    <option value="abril">Abril</option>
-                    <option value="mayo">Mayo</option>
-                    <option value="junio">Junio</option>
-                    <option value="julio">Julio</option>
-                    <option value="agosto">Agosto</option>
-                    <option value="septiembre">Septiembre</option>
-                    <option value="octubre">Octubre</option>
-                    <option value="noviembre">Noviembre</option>
-                    <option value="diciembre">Diciembre</option>
-                </select></div>
-            <div class="calendario__año" id="año"><select name="year" class="doce">
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                </select></div>
+    <h1 class="title">CALENDARIO BICTIA</h1>
+    <div class="calendar">
+        <div class="calendar-info">
+            <div class="calendar-month" id="month">
+                <select id="select-month" name="" onchange="optionFunction()">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+            </div>
 
+            <div class="calendar-year" id="calendar-year-id">
+                <select id="select-year" name="" class="select--year" onchange="optionFunction()">
+                </select>
+            </div>
         </div>
-
-        <div class="calendario__semana">
-            <div class="calendario__dia calendar__articulo">Lun</div>
-            <div class="calendario__dia calendar__articulo">Mar</div>
-            <div class="calendario__dia calendar__articulo">Mie</div>
-            <div class="calendario__dia calendar__articulo">Jue</div>
-            <div class="calendario__dia calendar__articulo">Vie</div>
-            <div class="calendario__dia calendar__articulo">Sab</div>
-            <div class="calendario__dia calendar__articulo">Dom</div>
-        </div>
-<<<<<<< HEAD
         
-        <div id="calendario-numeros">
-            <table id="meses">   
-=======
-        <div class="calendario__numeros">
-            <table class="mese">
->>>>>>> fd52b9e48616f3030bd434bca84d71759bfdec08
-                <tr class="numerosa">
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td class="dom">5</td>
-                </tr>
-<<<<<<< HEAD
+        <div id="week-container">
+            <table id="week">   
+                <thead >
+                    <td class="calendario__dia calendar__articulo">M</td>
+                    <td class="calendario__dia calendar__articulo">Tu</td>
+                    <td class="calendario__dia calendar__articulo">W</td>
+                    <td class="calendario__dia calendar__articulo">Th</td>
+                    <td class="calendario__dia calendar__articulo">F</td>
+                    <td class="calendario__dia calendar__articulo">Sa</td>
+                    <td class="calendario__dia calendar__articulo">Su</td>
+                </thead>
+                <tbody>
+                    <!--   <tr class="numerosa">
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>1</td>  
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td class="dom">5</td>
+                    </tr> -->
+                </tbody>
                 
-=======
-                <tr>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td class="dom">12</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td class="dom">19</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                    <td>23</td>
-                    <td>24</td>
-                    <td>25</td>
-                    <td class="dom">26</td>
-                </tr>
-                <tr>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
-                    <td>30</td>
-                    <td>31</td>
-                    <td>&nbsp;</td>
-                    <td class="dom">&nbsp;</td>
-                </tr>
->>>>>>> fd52b9e48616f3030bd434bca84d71759bfdec08
             </table>
         </div>
     </div>
     
-
     <script src="script.js"></script>
+    
 </body>
 
 </html>
