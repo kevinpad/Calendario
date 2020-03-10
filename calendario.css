@@ -82,7 +82,8 @@
         background: #ffffff05;
         }
     .dom{
-        color: rgb(255, 37, 37);
+        color: rgb(255, 37, 37);  
+        font-weight: bold;
     }
     #week-container{
         font-family: fantasy ;
